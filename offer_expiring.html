@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta name=”x-apple-disable-message-reformatting”>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>TrueCar</title>
+    <style type="text/css">
+        #outlook a {
+                    padding: 0;
+                }
+            
+                .ReadMsgBody {
+                    width: 100%;
+                }
+            
+                .ExternalClass {
+                    width: 100%;
+                }
+            
+                .ExternalClass {
+                    width: 100%;
+                }
+            
+                .ExternalClass,
+                .ExternalClass p,
+                .ExternalClass span,
+                .ExternalClass font,
+                .ExternalClass td,
+                .ExternalClass div,
+                .ExternalClass * {
+                    line-height: 100%;
+                }
+            
+                body,
+                table,
+                td,
+                p,
+                a,
+                li,
+                blockquote {
+                    -webkit-text-size-adjust: 100%;
+                    -ms-text-size-adjust: 100%;
+                }
+            
+                #bodyTable {
+                    margin: 0;
+                    padding: 0;
+                    width: 100% !important;
+                    line-height: 100% !important;
+                }
+            
+                table {
+                    border-collapse: collapse;
+                    mso-table-lspace: 0pt;
+                    mso-table-rspace: 0pt;
+                }
+            
+                table td {
+                    border-collapse: collapse;
+                    mso-table-lspace: 0pt;
+                    mso-table-rspace: 0pt;
+                }
+            
+                img {
+                    -ms-interpolation-mode: bicubic;
+                }
+            
+                a:link, a:active, a:visited, a .yshortcuts {
+                    color: #4199d3;
+                }
+            
+                body {
+                    margin: 0;
+                    padding: 0;
+                }
+            
+                body,
+                #body_table,
+                #body_cell {
+                    height: 100% !important;
+                    margin: 0;
+                    padding: 0;
+                    width: 100% !important;
+                    background-color: #efefef;
+                }
+            
+                img {
+                    border: 0;
+                    line-height: 100%;
+                    outline: none;
+                    text-decoration: none;
+                }
+            
+                img.round-pic {
+                    -webkit-border-radius: 50% !important;
+                    -moz-border-radius: 50% !important;
+                    border-radius: 50% !important;
+                }
+                /* MEDIA QUERY SCREEN 600px */
+            
+                @media screen and (max-width: 600px),
+                screen and (max-device-width: 600px) {
+                    div[id="gmail-app"] {
+                    display: none !important;
+                    font-size: 0px !important;
+                    }
+                    img[class="center-image-600"] {
+                    margin: 0 auto !important;
+                    }
+                    img[class="responsive-image-600"] {
+                    margin: 0 auto !important;
+                    width: 100% !important;
+                    min-width: 100%!important;
+                    height: auto !important;
+                    }
+                    table[class="responsive-table-600"] {
+                    width: 100%!important;
+                    min-width: 100%!important;
+                    }
+                    table[class="parent-table"] {
+                    min-width: 100%!important;
+                    }
+                    td[class="block-padding"] {
+                    padding: 10px 5% 10px 5% !important;
+                    text-align: left;
+                    }
+                    td[class="header-mobile"] {
+                    padding: 12px 4% !important;
+                    }
+                    td[class="hide-600"] {
+                    display: none !important;
+                    }
+                    td[class="no-padding"] {
+                    padding: 0px !important;
+                    }
+                    td[class="section-padding"] {
+                    padding-left: 6px !important;
+                    padding-right: 6px !important;
+                    }
+                    td[class="section-padding-nobottom"] {
+                    padding: 20px 20px 0px!important;
+                    }
+                    td[class="split-col-600"] {
+                    display: block !important;
+                    width: 100% !important;
+                    }
+                    span[class="no-wrap"] {
+                    white-space: nowrap !important;
+                    }
+                }
+                /* MEDIA QUERY SCREEN 480px */
+            
+                @media screen and (max-width: 480px),
+                screen and (max-device-width: 480px) {
+                    img[class="center-image"] {
+                    margin: 0 auto !important;
+                    }
+                    img[class="responsive-image"] {
+                    margin: 0 auto !important;
+                    width: 100% !important;
+                    height: auto !important;
+                    }
+                    table[class="responsive-table"] {
+                    width: 100%!important;
+                    }
+                    td[class="hide-mobile"] {
+                    display: none !important;
+                    }
+                    td[class="no-padding-mobile"] {
+                    padding: 0 !important;
+                    }
+                    td[class="section-padding"] {
+                    padding-left: 6px !important;
+                    padding-right: 6px !important;
+                    }
+                    table[class="split-col"] {
+                    display: block !important;
+                    width: 100% !important;
+                    }
+                    table tr[class="split-col"] {
+                    display: block !important;
+                    width: 100% !important;
+                    }
+                    table tr td[class="split-col"] {
+                    display: block !important;
+                    width: 100% !important;
+                    }
+                    td[class="split-col"] {
+                    display: block !important;
+                    width: 100% !important;
+                    }
+                    span[class="no-wrap"] {
+                    white-space: nowrap !important;
+                    }
+                    a[class="font-decrease-32"], font[class="font-decrease-32"] {
+                    font-size: 32px !important;
+                    }
+                    a[class="font-decrease-26"], font[class="font-decrease-26"] {
+                    font-size: 26px !important;
+                    }
+                    a[class="font-decrease-24"], font[class="font-decrease-24"] {
+                    font-size: 24px !important;
+                    }
+                    a[class="font-decrease-22"], font[class="font-decrease-22"] {
+                    font-size: 22px !important;
+                    }
+                    a[class="font-decrease-20"], font[class="font-decrease-20"] {
+                    font-size: 20px !important;
+                    }
+                    a[class="font-decrease-18"], font[class="font-decrease-18"] {
+                    font-size: 18px !important;
+                    }
+                    a[class="font-decrease-16"], font[class="font-decrease-16"] {
+                    font-size: 16px !important;
+                    }
+                    a[class="font-decrease-14"], font[class="font-decrease-14"] {
+                    font-size: 14px !important;
+                    }
+                    a[class="font-decrease-12"],font[class="font-decrease-12"] {
+                    font-size: 12px !important;
+                    }
+                    a[class="font-decrease-10"],
+                    font[class="font-decrease-10"] {
+                    font-size: 10px !important;
+                    }
+                    a[class="font-decrease-9"],
+                    font[class="font-decrease-9"] {
+                    font-size: 9px !important;
+                    }
+                    a[class="font-decrease-8"],
+                    font[class="font-decrease-8"] {
+                    font-size: 8px !important;
+                    }
+                    a[href^="tel"],
+                    a[href^="sms"] {
+                    text-decoration: none !important;
+                    color: #333333 !important;
+                    pointer-events: none;
+                    cursor: default;
+                    }
+                    .mobile_link a[href^="tel"],
+                    .mobile_link a[href^="sms"] {
+                    text-decoration: none !important;
+                    font-weight: bold !important;
+                    color: #333333 !important;
+                    pointer-events: auto;
+                    cursor: default;
+                    }
+                    div[class="offer-vehicle-image"] {
+                    padding-bottom: 10px !important;
+                    }
+                }
+                /* MEDIA QUERY SCREEN 350px */
+            
+                @media screen and (max-width: 350px),
+                screen and (max-device-width: 350px) {
+                    img[class="center-image-350"] {
+                    margin: 0 auto !important;
+                    }
+                    img[class="responsive-image-350"] {
+                    margin: 0 auto !important;
+                    width: 100% !important;
+                    height: auto !important;
+                    }
+                    img[class="image-scale-70"] {
+                    width: 70% !important;
+                    height: auto !important;
+                    }
+                    img[class="image-scale-50"] {
+                    width: 50% !important;
+                    height: auto !important;
+                    }
+                    table[class="responsive-table-350"] {
+                    width: 100%!important;
+                    }
+                    table tr td a[class="btn-primary"] {
+                    width: 100%!important;
+                    height: 100%!important;
+                    }
+                    table[class="responsive-button"],
+                    td[class="responsive-button"],
+                    a[class="responsive-button"] {
+                    width: 100%!important;
+                    }
+                    table[class="responsive-round-button"],
+                    td[class="responsive-round-button"],
+                    a[class="responsive-round-button"] {
+                    width: 100%!important;
+                    }
+                    td[class="hide-mobile"] {
+                    display: none !important;
+                    }
+                    td[class="no-padding-mobile"] {
+                    padding: 0 !important;
+                    }
+                    td[class="split-col"] {
+                    display: block !important;
+                    width: 100% !important;
+                    }
+                    td[class="dealer-detail-logo"] {
+                    width: 70px!important;
+                    }
+                    a[class="font-decrease-32"],
+                    font[class="font-decrease-32"] {
+                    font-size: 32px !important;
+                    }
+                    a[class="font-decrease-26"],
+                    font[class="font-decrease-26"] {
+                    font-size: 26px !important;
+                    }
+                    a[class="font-decrease-24"],
+                    font[class="font-decrease-24"] {
+                    font-size: 24px !important;
+                    }
+                    a[class="font-decrease-22"],
+                    font[class="font-decrease-22"] {
+                    font-size: 22px !important;
+                    }
+                    a[class="font-decrease-20"],
+                    font[class="font-decrease-20"] {
+                    font-size: 20px !important;
+                    }
+                    a[class="font-decrease-18"],
+                    font[class="font-decrease-18"] {
+                    font-size: 18px !important;
+                    }
+                    a[class="font-decrease-16"],
+                    font[class="font-decrease-16"] {
+                    font-size: 16px !important;
+                    }
+                    a[class="font-decrease-14"],
+                    font[class="font-decrease-14"] {
+                    font-size: 14px !important;
+                    }
+                    a[class="font-decrease-12"],
+                    font[class="font-decrease-12"] {
+                    font-size: 12px !important;
+                    }
+                    a[class="font-decrease-10"],
+                    font[class="font-decrease-10"] {
+                    font-size: 10px !important;
+                    }
+                    a[class="font-decrease-9"],
+                    font[class="font-decrease-9"] {
+                    font-size: 9px !important;
+                    }
+                    a[class="font-decrease-8"],
+                    font[class="font-decrease-8"] {
+                    font-size: 8px !important;
+                    }
+                    a[class="btn-primary"] {
+                    height: 100%!important;
+                    }
+                    a[href^="tel"],
+                    a[href^="sms"] {
+                    text-decoration: none !important;
+                    color: #333333 !important;
+                    pointer-events: none;
+                    cursor: default;
+                    }
+                    .mobile_link a[href^="tel"],
+                    .mobile_link a[href^="sms"] {
+                    text-decoration: none !important;
+                    font-weight: bold !important;
+                    color: #333333 !important;
+                    pointer-events: auto;
+                    cursor: default;
+                    }
+                }
+                /* WEBKIT, CHROME, SAFARI MEDIA QUERY @ 480px*/
+            
+                @media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 480px) {
+                    body,
+                    table,
+                    td,
+                    p,
+                    a,
+                    li,
+                    blockquote {
+                    -webkit-text-size-adjust: none !important;
+                    }
+                    body {
+                    width: 100% !important;
+                    min-width: 100% !important;
+                    }
+                    span[class="no-wrap"] {
+                    white-space: nowrap !important;
+                    }
+                    div[class="center-text"] {
+                    text-align: center !important;
+                    }
+                    img[class="center-image"] {
+                    margin: 0 auto !important;
+                    }
+                    img[class="responsive-image"] {
+                    margin: 0 auto !important;
+                    width: 100% !important;
+                    height: auto !important;
+                    }
+                    td[class="hide-mobile"] {
+                    display: none !important;
+                    }
+                    td[class="no-padding-mobile"] {
+                    padding: 0 !important;
+                    }
+                    td[class="split-col"] {
+                    display: block !important;
+                    width: 100% !important;
+                    }
+                    td[class="section-padding"] {
+                    padding-left: 6px !important;
+                    padding-right: 6px !important;
+                    }
+                    a[class="font-decrease-32"],
+                    font[class="font-decrease-32"] {
+                    font-size: 32px !important;
+                    }
+                    a[class="font-decrease-26"],
+                    font[class="font-decrease-26"] {
+                    font-size: 26px !important;
+                    }
+                    a[class="font-decrease-24"],
+                    font[class="font-decrease-24"] {
+                    font-size: 24px !important;
+                    }
+                    a[class="font-decrease-22"],
+                    font[class="font-decrease-22"] {
+                    font-size: 22px !important;
+                    }
+                    a[class="font-decrease-20"],
+                    font[class="font-decrease-20"] {
+                    font-size: 20px !important;
+                    }
+                    a[class="font-decrease-18"],
+                    font[class="font-decrease-18"] {
+                    font-size: 18px !important;
+                    }
+                    a[class="font-decrease-16"],
+                    font[class="font-decrease-16"] {
+                    font-size: 16px !important;
+                    }
+                    a[class="font-decrease-14"],
+                    font[class="font-decrease-14"] {
+                    font-size: 14px !important;
+                    }
+                    a[class="font-decrease-12"],
+                    font[class="font-decrease-12"] {
+                    font-size: 12px !important;
+                    }
+                    a[class="font-decrease-10"],
+                    font[class="font-decrease-10"] {
+                    font-size: 10px !important;
+                    }
+                    a[class="font-decrease-9"],
+                    font[class="font-decrease-9"] {
+                    font-size: 9px !important;
+                    }
+                    a[class="font-decrease-8"],
+                    font[class="font-decrease-8"] {
+                    font-size: 8px !important;
+                    }
+                    a[href^="tel"],
+                    a[href^="sms"] {
+                    text-decoration: none !important;
+                    color: #333333 !important;
+                    pointer-events: none;
+                    cursor: default;
+                    }
+                    .mobile_link a[href^="tel"],
+                    .mobile_link a[href^="sms"] {
+                    text-decoration: none !important;
+                    font-weight: bold !important;
+                    color: #333333 !important;
+                    pointer-events: auto;
+                    cursor: default;
+                    }
+                }
+    </style>
+</head>
+
+<body bgcolor="#efefef" leftmargin="0" marginheight="0" marginwidth="0" offset="0" topmargin="0">
+    <table align="center" bgcolor="#efefef" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed; width:100%">
+        <tbody>
+            <tr>
+                <td align="center" bgcolor="#efefef" class="no-padding" style="padding-top:0; padding-bottom:0; padding-left:0; padding-right:0;" valign="top">
+                    <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="responsive-table-600" style="min-width:600px; table-layout:fixed; width:600px">
+                        <tbody>
+                            <tr>
+                                <td align="center" bgcolor="#ffffff" class="section-padding" style="padding-top:0px; padding-bottom:0px; padding-left:0px; padding-right:0px;" valign="middle">
+                                    <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" style="width:100%">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center" bgcolor="#ffffff" class="section-padding" style="border-bottom:1px solid #d2d2d2; padding-top:24px; padding-bottom:24px; padding-left:0px; padding-right:0px;" valign="middle">
+                                                    <!-- offer url is here -->
+                                                    <a href="{{trade_url}}" title="TrueCar"><img alt="TrueCar" border="0" height="20" hspace="0" src="http://tc-product-emails.s3.amazonaws.com/product/images/logo-truecar.png" style="width:112px; border-left-width:0; border-bottom-width:0; border-right-width:0; border-top-width:0; outline:none; text-decoration:none; display:block;"
+                                                        vspace="0" width="112" /> </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" bgcolor="#ffffff" style="mso-line-height-rule:exactly; padding-top:38px; padding-bottom:26px;" valign="middle"><font class="font-decrease-26" style="color:#333333; font-family:Arial, sans-serif; font-size:36px; font-weight:200; line-height:1.2;">Your True Cash Offers<br />
+									Expire in 2 Days </font></td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" style="mso-line-height-rule:exactly; padding-bottom:18px;" valign="middle"><font class="font-decrease-16" style="color:#333333; font-family:Arial, sans-serif; font-size:18px; line-height:1.4;">Your offers are only valid until<br />
+									{{expires_at}}. Don’t miss out,<br />
+									contact a dealer today. </font></td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" bgcolor="#ffffff" style="padding-bottom:26px;" valign="middle">
+                                                    <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="left" height="22" valign="middle" width="32"><img alt="True Cash Offer" border="0" height="22" hspace="0" src="http://tc-product-emails.s3.amazonaws.com/product/images/shield.png" style="border-left-width:0; border-bottom-width:0; border-right-width:0; border-top-width:0; outline:none; text-decoration:none; display:block;"
+                                                                    vspace="0" width="19" /></td>
+                                                                <td align="left" style="mso-line-height-rule:exactly;" valign="middle"><font class="font-decrease-24" style="color:#333333; font-family:Arial, sans-serif; font-size:26px; font-weight:200; line-height:1;">True Cash Offer</font></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" bgcolor="#ffffff" style="color:#333333; font-family:Arial, sans-serif; font-size:50px; font-weight:200; line-height:1; mso-line-height-rule:exactly; padding-bottom:23px;" valign="middle">
+                                                        ${{#ifGte offer.offer_blob.vehicle_price 1000}}{{numberFormat offer.offer_blob.vehicle_price",000"}}{{else}}{{numberFormat offer.offer_blob.vehicle_price "0"}}{{/ifGte}}
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" style="mso-line-height-rule:exactly; padding-bottom:24px;" valign="middle"><font class="font-decrease-16" style="color:#333333; font-family:Arial, sans-serif; font-size:18px; line-height:1.4;">Your offers expire {{expires_at}}<br />
+                                                {{offer.offer_blob.vehicle_year}} {{offer.offer_blob.vehicle_make}} {{offer.offer_blob.vehicle_model}} {{offer.offer_blob.vehicle_trim}} </font></td>
+                                            </tr>
+                                            <tr>
+                                            <td align="center" valign="middle">
+                                                <table border="0" cellspacing="0" cellpadding="0" align="center" width="338" style="border-top:2px dashed #eeeeee; border-bottom:2px dashed #eeeeee; border-left:2px dashed #eeeeee; border-right:2px dashed #eeeeee;" class="responsive-table-350">
+                                                    <tr>
+                                                    <td align="center" valign="middle" bgcolor="#efefef" style="background-color:#fefefe; background: url('https://s3.amazonaws.com/tc-product-emails/product/trade/background.png') top left repeat; padding-top:18px; padding-bottom:18px; padding-left:10px; padding-right:10px;">
+                                                          <table border="0" cellpadding="0" cellspacing="0" align="center" style="max-width:286px; border-top:2px solid #eaebeb; border-bottom:2px solid #eaebeb; border-left:2px solid #eaebeb; border-right:2px solid #eaebeb;">
+                                                              <tr>
+                                                                  <td align="left" valign="top" bgcolor="#ffffff" style="padding-top:8px; padding-bottom:8px; padding-left:8px;">
+                                                                      <img src="https://s3.amazonaws.com/tc-product-emails/product/trade/asterisk.png" width="14" height="32" vspace="0" hspace="0" style="border-left-width: 0; border-bottom-width: 0; border-right-width: 0; border-top-width: 0; outline: none; text-decoration: none; display: block;" />
+                                                                  </td>
+                                                                  <td align="left" valign="top" bgcolor="#ffffff" style="padding-top:8px; padding-bottom:8px;">
+                                                                      <img src="https://s3.amazonaws.com/tc-product-emails/product/trade/{{lower (substring offer.offer_blob.vehicle_vin 0 1)}}.png" width="14" height="32" vspace="0" hspace="0" style="border-left-width: 0; border-bottom-width: 0; border-right-width: 0; border-top-width: 0; outline: none; text-decoration: none; display: block;" />
+                                                                  </td>
+                                                                  <td align="left" valign="top" bgcolor="#ffffff" style="padding-top:8px; padding-bottom:8px;">
+                                                                      <img src="https://s3.amazonaws.com/tc-product-emails/product/trade/{{lower (substring offer.offer_blob.vehicle_vin 1 2)}}.png" width="14" height="32" vspace="0" hspace="0" style="border-left-width: 0; border-bottom-width: 0; border-right-width: 0; border-top-width: 0; outline: none; text-decoration: none; display: block;" />
+                                                                  </td>
+                                                                  <td align="left" valign="top" bgcolor="#ffffff" style="padding-top:8px; padding-bottom:8px;">
+                                                                      <img src="https://s3.amazonaws.com/tc-product-emails/product/trade/{{lower (substring offer.offer_blob.vehicle_vin 2 3)}}.png" width="14" height="32" vspace="0" hspace="0" style="border-left-width: 0; border-bottom-width: 0; border-right-width: 0; border-top-width: 0; outline: none; text-decoration: none; display: block;" />
+                                                                  </td>
+                                                                  <td align="left" valign="top" bgcolor="#ffffff" style="padding-top:8px; padding-bottom:8px;">
+                                                                      <img src="https://s3.amazonaws.com/tc-product-emails/product/trade/{{lower (substring offer.offer_blob.vehicle_vin 3 4)}}.png" width="14" height="32" vspace="0" hspace="0" style="border-left-width: 0; border-bottom-width: 0; border-right-width: 0; border-top-width: 0; outline: none; text-decoration: none; display: block;" />
+                                                                  </td>
+                                                                  <td align="left" valign="top" bgcolor="#ffffff" style="padding-top:8px; padding-bottom:8px;">
+                                                                      <img src="https://s3.amazonaws.com/tc-product-emails/product/trade/{{lower (substring offer.offer_blob.vehicle_vin 4 5)}}.png" width="14" height="32" vspace="0" hspace="0" style="border-left-width: 0; border-bottom-width: 0; border-right-width: 0; border-top-width: 0; outline: none; text-decoration: none; display: block;" />
+                                                                  </td>
+                                                                  <td align="left" valign="top" bgcolor="#ffffff" style="padding-top:8px; padding-bottom:8px;">
+                                                                      <img src="https://s3.amazonaws.com/tc-product-emails/product/trade/{{lower (substring offer.offer_blob.vehicle_vin 5 6)}}.png" width="14" height="32" vspace="0" hspace="0" style="border-left-width: 0; border-bottom-width: 0; border-right-width: 0; border-top-width: 0; outline: none; text-decoration: none; display: block;" />
+                                                                  </td>
+                                                                  <td align="left" valign="top" bgcolor="#ffffff" style="padding-top:8px; padding-bottom:8px;">
+                                                                      <img src="https://s3.amazonaws.com/tc-product-emails/product/trade/{{lower (substring offer.offer_blob.vehicle_vin 6 7)}}.png" width="14" height="32" vspace="0" hspace="0" style="border-left-width: 0; border-bottom-width: 0; border-right-width: 0; border-top-width: 0; outline: none; text-decoration: none; display: block;" />
+                                                                  </td>
+                                                                  <td align="left" valign="top" bgcolor="#ffffff" style="padding-top:8px; padding-bottom:8px;">
+                                                                      <img src="https://s3.amazonaws.com/tc-product-emails/product/trade/{{lower (substring offer.offer_blob.vehicle_vin 7 8)}}.png" width="14" height="32" vspace="0" hspace="0" style="border-left-width: 0; border-bottom-width: 0; border-right-width: 0; border-top-width: 0; outline: none; text-decoration: none; display: block;" />
+                                                                  </td>
+                                                                  <td align="left" valign="top" bgcolor="#ffffff" style="padding-top:8px; padding-bottom:8px;">
+                                                                      <img src="https://s3.amazonaws.com/tc-product-emails/product/trade/{{lower (substring offer.offer_blob.vehicle_vin 8 9)}}.png" width="14" height="32" vspace="0" hspace="0" style="border-left-width: 0; border-bottom-width: 0; border-right-width: 0; border-top-width: 0; outline: none; text-decoration: none; display: block;" />
+                                                                  </td>
+                                                                  <td align="left" valign="top" bgcolor="#ffffff" style="padding-top:8px; padding-bottom:8px;">
+                                                                      <img src="https://s3.amazonaws.com/tc-product-emails/product/trade/{{lower (substring offer.offer_blob.vehicle_vin 9 10)}}.png" width="14" height="32" vspace="0" hspace="0" style="border-left-width: 0; border-bottom-width: 0; border-right-width: 0; border-top-width: 0; outline: none; text-decoration: none; display: block;" />
+                                                                  </td>
+                                                                  <td align="left" valign="top" bgcolor="#ffffff" style="padding-top:8px; padding-bottom:8px;">
+                                                                      <img src="https://s3.amazonaws.com/tc-product-emails/product/trade/{{lower (substring offer.offer_blob.vehicle_vin 10 11)}}.png" width="14" height="32" vspace="0" hspace="0" style="border-left-width: 0; border-bottom-width: 0; border-right-width: 0; border-top-width: 0; outline: none; text-decoration: none; display: block;" />
+                                                                  </td>
+                                                                  <td align="left" valign="top" bgcolor="#ffffff" style="padding-top:8px; padding-bottom:8px;">
+                                                                      <img src="https://s3.amazonaws.com/tc-product-emails/product/trade/{{lower (substring offer.offer_blob.vehicle_vin 11 12)}}.png" width="14" height="32" vspace="0" hspace="0" style="border-left-width: 0; border-bottom-width: 0; border-right-width: 0; border-top-width: 0; outline: none; text-decoration: none; display: block;" />
+                                                                  </td>
+                                                                  <td align="left" valign="top" bgcolor="#ffffff" style="padding-top:8px; padding-bottom:8px;">
+                                                                      <img src="https://s3.amazonaws.com/tc-product-emails/product/trade/{{lower (substring offer.offer_blob.vehicle_vin 12 13)}}.png" width="14" height="32" vspace="0" hspace="0" style="border-left-width: 0; border-bottom-width: 0; border-right-width: 0; border-top-width: 0; outline: none; text-decoration: none; display: block;" />
+                                                                  </td>
+                                                                  <td align="left" valign="top" bgcolor="#ffffff" style="padding-top:8px; padding-bottom:8px;">
+                                                                      <img src="https://s3.amazonaws.com/tc-product-emails/product/trade/{{lower (substring offer.offer_blob.vehicle_vin 13 14)}}.png" width="14" height="32" vspace="0" hspace="0" style="border-left-width: 0; border-bottom-width: 0; border-right-width: 0; border-top-width: 0; outline: none; text-decoration: none; display: block;" />
+                                                                  </td>
+                                                                  <td align="left" valign="top" bgcolor="#ffffff" style="padding-top:8px; padding-bottom:8px;">
+                                                                      <img src="https://s3.amazonaws.com/tc-product-emails/product/trade/{{lower (substring offer.offer_blob.vehicle_vin 14 15)}}.png" width="14" height="32" vspace="0" hspace="0" style="border-left-width: 0; border-bottom-width: 0; border-right-width: 0; border-top-width: 0; outline: none; text-decoration: none; display: block;" />
+                                                                  </td>
+                                                                  <td align="left" valign="top" bgcolor="#ffffff" style="padding-top:8px; padding-bottom:8px;">
+                                                                      <img src="https://s3.amazonaws.com/tc-product-emails/product/trade/{{lower (substring offer.offer_blob.vehicle_vin 15 16)}}.png" width="14" height="32" vspace="0" hspace="0" style="border-left-width: 0; border-bottom-width: 0; border-right-width: 0; border-top-width: 0; outline: none; text-decoration: none; display: block;" />
+                                                                  </td>
+                                                                  <td align="left" valign="top" bgcolor="#ffffff" style="padding-top:8px; padding-bottom:8px;">
+                                                                      <img src="https://s3.amazonaws.com/tc-product-emails/product/trade/{{lower (substring offer.offer_blob.vehicle_vin 16 17)}}.png" width="14" height="32" vspace="0" hspace="0" style="border-left-width: 0; border-bottom-width: 0; border-right-width: 0; border-top-width: 0; outline: none; text-decoration: none; display: block;" />
+                                                                  </td>
+                                                                  <td align="left" valign="top" bgcolor="#ffffff" style="padding-top:8px; padding-bottom:8px; padding-right:8px;">
+                                                                      <img src="https://s3.amazonaws.com/tc-product-emails/product/trade/asterisk.png" width="14" height="32" vspace="0" hspace="0" style="border-left-width: 0; border-bottom-width: 0; border-right-width: 0; border-top-width: 0; outline: none; text-decoration: none; display: block;" />
+                                                                  </td>
+                                                              </tr>
+                                                          </table>
+                                                          <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
+                                                              <tr>
+                                                                  <td align="center" valign="middle" style="color:#333333; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:12px; font-weight:200; line-height:1.1; letter-spacing:12px; padding-top:12px; padding-bottom:16px;">
+                                                                      &nbsp;{{offer.barcode_shortcode}}
+                                                                  </td>
+                                                              </tr>
+                                                              <tr>
+                                                                  <td align="center" valign="middle">
+                                                                      <table border="0" cellpadding="0" cellspacing="0" align="center" width="270" style="background-color:#ff9200;-moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px;" class="responsive-round-button">
+                                                                          <tr>
+                                                                              <td width="270" height="40" align="center" valign="middle" bgcolor="#ff9200" style="-moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px;" class="responsive-round-button">
+                                                                                  <font face="'Helvetica Neue', Helvetica, Arial, sans-serif" style="color:#ffffff; font-size:16px;">
+                                                                                      <a href="{{{trade_url}}}" style="color:#ffffff; text-decoration:none; display:block; width:270px; height:40px; line-height:38px;" title="Review Your New Offers" class="responsive-round-button">Review Your Offers</a>
+                                                                                  </font>
+                                                                              </td>
+                                                                          </tr>
+                                                                      </table>
+                                                                  </td>
+                                                              </tr>
+                                                          </table>
+                                                      </td>
+                                                  </tr>
+                                                </table>
+                                            </td>
+                                            </tr>
+                                            <tr><td align="center" height="50px"></td></tr>
+                                            <tr>
+                                                <td align="center" bgcolor="#ffffff" class="section-padding" style="border-top:1px solid #d2d2d2; padding-top:50px; padding-bottom:50px; padding-left:0px; padding-right:0px;" valign="middle">
+                                                    <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="center" style="padding-bottom:10px;" valign="middle"><img alt="TrueCar" border="0" height="20" hspace="0" src="http://tc-product-emails.s3.amazonaws.com/product/images/logo-truecar-black.png" style="width:112px; border-left-width:0; border-bottom-width:0; border-right-width:0; border-top-width:0; outline:none; text-decoration:none; display:block;"
+                                                                    vspace="0" width="112" /></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- {{hostedUnsubscribeUrl}} -->
+
+    <table align="center" bgcolor="#efefef" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed; width:100%">
+        <tbody>
+            <tr>
+                <td align="center" bgcolor="#efefef" style="padding-bottom:20px;" valign="top">&nbsp;
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="responsive-table-600" style="min-width:600px; table-layout:fixed; width:600px">
+                        <tbody>
+                            <tr>
+                                <td align="center" bgcolor="#efefef" style="padding-bottom:20px;" valign="top">
+                                    <div class="text-footer-c" style="color:#a9a9a9; font-family:Helvetica, Arial, sans-serif; font-size:11px; line-height:14px; text-align:center">TrueCar Inc. &nbsp;&nbsp;|&nbsp;&nbsp;120 Broadway, Suite 200, Santa Monica, CA 90401
+                                        <br />
+                                        <br /> All Rights Reserved&nbsp;&nbsp;|&nbsp;&nbsp;<a class="link-footer-u" href="{{unsubscribeUrl}}" style="color:#a9a9a9; text-decoration:underline" target="_blank"><span class="link-footer-u" style="color:#a9a9a9; text-decoration:underline">Unsubscribe</span></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                                        <a class="link-footer-u" href="https://www.truecar.com/privacy/" style="color:#a9a9a9; text-decoration:underline" target="_blank"><span class="link-footer-u" style="color:#a9a9a9; text-decoration:underline">Privacy Policy</span></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                                        <span class="link-footer-u" style="color:rgb(169, 169, 169); text-decoration:underline"><a class="link-footer-u" href="https://www.truecar.com/terms/" style="color:#a9a9a9; text-decoration:underline" target="_blank">Terms of Servic</a>e</span>
+                                        <br
+                                        /> &nbsp;
+                                    </div>
+
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="responsive-table-600" style="min-width:600px; table-layout:fixed; width:600px">
+                                        <tbody>
+                                            <tr>
+                                                <td align="left" bgcolor="#efefef" style="color:#9e9e9e; font-family:Arial, sans-serif; font-size:11px; line-height:11px; padding-top:10px; padding-bottom:30px; padding-left:20px; padding-right:20px;" valign="top">You received this email because you submitted your contact information to TrueCar, Inc. ("TrueCar") in connection with your use of the TrueCar Trade service. TrueCar does not broker, sell, or lease motor
+                                                    vehicles. Any True Cash Offers that you receive for your vehicle constitute conditional purchase offers from TrueCar Certified Dealers and not from TrueCar. Your TrueCar Certified Dealers have the right
+                                                    to inspect your vehicle before purchasing it from you. If the inspection reveals a difference from your online assessment of your vehicle's condition, the Certified Dealer may adjust the offer amount,
+                                                    which may result in a decrease of the offer. TrueCar is not responsible for such adjustments to your True Cash Offers. TrueCar Certified Dealers pay TrueCar in connection with the TrueCar Trade service.
+                                                    Your True Cash Offer may not reflect the highest sale price or trade-in allowance available for your vehicle. The TrueCar Trade service is subject to the Terms of Service available here: <a href="https://www.truecar.com/terms/"
+                                                    style="color:#999999; font-family:Arial, sans-serif; font-size:11px; font-weight:normal; text-decoration:underline;" target="_blank">terms of service</a>
+                                                    <br />
+                                                    <br /> TrueCar operates this information website ("Service") featuring pricing, performance, technical, and safety data available for new and used vehicles. The Service is not available in all locations. By
+                                                    accessing the website you agree to the Terms of Service.
+                                                    <br />
+                                                    <br /> TrueCar does not broker, sell, or lease motor vehicles. Each Certified Dealer sets its own pricing, and will confirm actual vehicle availability from in-stock inventory, including options and color
+                                                    choices.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- v1.4 -->
+
+                    <div id="gmail-app" style="display:none; white-space:nowrap; font:15px courier; color:#efefef;">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
